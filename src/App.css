@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Mulish-Regular";
+  src: url("./assets/font/Mulish-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+.arrow.down {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.background-container {
+  background-image: url("./assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.hero-section {
+  padding: 50px 0;
+  color: black;
+}
+
+.hero-section h1 {
+  color: #191970;
+  font-family: "Mulish-Regular";
+  font-weight: 800;
+}
