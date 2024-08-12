@@ -6,7 +6,7 @@ import ReusableButton from "./ReusableButton";
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="white" expand="lg" className="fixed">
+    <Navbar bg="white" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
           <img src={Logo} className="d-inline-block align-top" alt="" />
@@ -14,12 +14,20 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto d-flex align-items-center">
-            <Nav.Link href="#personal">Personal</Nav.Link>
-            <Nav.Link href="#business">Business</Nav.Link>
+            <Nav.Link href="#personal" className="custom-nav-link active">
+              Personal
+            </Nav.Link>
+            <Nav.Link href="#business" className="custom-nav-link">
+              Business
+            </Nav.Link>
           </Nav>
           <Nav className="ms-auto d-flex align-items-center">
-            <Nav.Link href="#company">Company</Nav.Link>
-            <Nav.Link href="#help">Help</Nav.Link>
+            <Nav.Link href="#company" className="custom-nav-link">
+              Company
+            </Nav.Link>
+            <Nav.Link href="#help" className="custom-nav-link">
+              Help
+            </Nav.Link>
             <ReusableButton
               variant="primary"
               size="sm"
@@ -28,7 +36,7 @@ const CustomNavbar = () => {
             >
               Get Started
             </ReusableButton>
-            <Nav.Link href="#shop" className="d-flex align-items-center">
+            <Nav.Link href="#country" className="d-flex align-items-center">
               <img src={Flag} alt="" />
               <i className="arrow down"></i>
             </Nav.Link>

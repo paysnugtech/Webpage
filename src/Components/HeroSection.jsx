@@ -6,7 +6,7 @@ import GooglePlay from "../assets/icons/google-play.png";
 
 const HeroSection = () => {
   return (
-    <div className="hero-section">
+    <div className="hero-section mt-5">
       <Container>
         <Row className="align-items-center">
           <Col md={6} lg={4}>

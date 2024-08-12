@@ -1,0 +1,10 @@
+.btn-custom:hover {
+  background-color: red;
+  border-color: yellow;
+}
+
+.custom-button-primary {
+  background-color: #191970 !important;
+  border-color: #191970 !important;
+  color: #fff;
+}
