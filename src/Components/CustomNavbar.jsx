@@ -7,7 +7,7 @@ import ReusableButton from "./ReusableButton";
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="white" expand="lg">
+    <Navbar bg="white" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img src={Logo} className="d-inline-block align-top" alt="" />

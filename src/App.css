@@ -47,3 +47,19 @@
   font-family: "Mulish-Regular";
   font-weight: 800;
 }
+
+.financial-header h4 {
+  font-family: "Mulish-Regular";
+  color: #191970;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: "Mulish-Regular";
+  color: #191970;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Mulish-Regular";
+}
