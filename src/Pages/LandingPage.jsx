@@ -2,15 +2,40 @@ import React from "react";
 import HeroSection from "../Components//HeroSection";
 import FinancialSolutionsHeader from "../Components/FinancialSolutionsHeader";
 import ReusableComponent from "../Components/ReusableComponent";
+import CardCarousel from "../Components/CardCarousel";
+import GetStarted from "../Components/GetStarted";
+import OurPartners from "../Components/OurPartners";
+import ReadyToGetStarted from "../Components/ReadyToGetStarted";
 import Image2 from "../assets/images/image2.svg";
 import Image3 from "../assets/images/image3.svg";
 import Image4 from "../assets/images/image4.svg";
 import Image5 from "../assets/images/image5.svg";
+import Image6 from "../assets/images/image6.svg";
 
 function LandingPage() {
+  const items = [
+    {
+      text: "This is the best banking app! I’m enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I’ve made Paysnag my main payment and I’m gonna refer all my friends!",
+      author: "ADEKOLA ADEBOKUN",
+    },
+    {
+      text: "This is the best banking app! I’m enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I’ve made Paysnag my main payment and I’m gonna refer all my friends!",
+      author: "ADEKOLA ADEBOKUN",
+    },
+    {
+      text: "This is the best banking app! I’m enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I’ve made Paysnag my main payment and I’m gonna refer all my friends!",
+      author: "ADEKOLA ADEBOKUN",
+    },
+    {
+      text: "This is the best banking app! I’m enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I’ve made Paysnag my main payment and I’m gonna refer all my friends!",
+      author: "JELEEL AJETUNMOBI",
+    },
+  ];
   return (
-    <div className="background-container">
-      <HeroSection />
+    <>
+      <div className="background-container">
+        <HeroSection />
+      </div>
       <FinancialSolutionsHeader />
       <ReusableComponent
         title="Reliable Money Transfer Solution"
@@ -34,7 +59,21 @@ function LandingPage() {
         imageSrc={Image5}
         reverse={true}
       />
-    </div>
+      <div className="container mt-5 text-center">
+        <h4 className="mb-4">Don't just take our word for it</h4>
+        <CardCarousel items={items} />
+        <GetStarted />
+      </div>
+      <ReusableComponent
+        title="Take Charge of Your Finances"
+        description="Experience the ultimate financial freedom with our intuitive app. Effortlessly manage your finances, pay bills, and stay in control wherever you are. 
+ Download now and embrace the ease of taking charge of your financial journey."
+        imageSrc={Image6}
+        reverse={true}
+      />
+      <OurPartners />
+      <ReadyToGetStarted />
+    </>
   );
 }
 

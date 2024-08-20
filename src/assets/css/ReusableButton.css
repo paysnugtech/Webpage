@@ -1,10 +1,11 @@
-.btn-custom:hover {
-  background-color: red;
-  border-color: yellow;
-}
-
+/* Resuable button Begins Here */
 .custom-button-primary {
   background-color: #191970 !important;
   border-color: #191970 !important;
   color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-button-primary:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const FinancialSolutionsHeader = () => {
   return (
-    <Container fluid className="bg-light py-5 financial-header">
+    <Container fluid className="bg-light py-5">
       <Row className="justify-content-center">
         <Col xs={12} md={10} lg={8} className="text-center">
           <h4 className="mb-3">
