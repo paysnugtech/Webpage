@@ -7,7 +7,7 @@ const Card = ({ text, author }) => (
   <div className="card bg-white shadow-sm text-start mb-3 m-3 p-3 rounded-3 border-0">
     <div className="card-body">
       <p className="card-text">{text}</p>
-      <h5 className="card-author text-center">{author}</h5>
+      <h5 className="card-author text-center text-dark">{author}</h5>
     </div>
   </div>
 );
