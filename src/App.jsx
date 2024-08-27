@@ -7,6 +7,7 @@ import Company from "./Pages/Company";
 import Help from "./Pages/Help";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         {/* <Route path="/registration" element={<RegistrationForm />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }

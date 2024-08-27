@@ -3,10 +3,10 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import User from "../assets/icons/user.svg";
 import Badge from "../assets/icons/badge.svg";
 
-const GetStarted = () => {
+const GettingStarted = () => {
   return (
     <Container className="text-center mt-5 mb-5 bg-light-gray">
-      <h2>Getting Started with Paysnug</h2>
+      <h3>Getting Started with Paysnug</h3>
       <p>There's so much we offer. Begin your journey in 3 simple steps now.</p>
       <Row className="justify-content-center mt-4 g-4">
         <Col md={4} lg={3}>
@@ -56,4 +56,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default GettingStarted;

@@ -8,7 +8,7 @@ import Mastercard from "../assets/logo/master-card.png";
 const OurPartners = () => {
   return (
     <Container className="text-center my-5">
-      <h6 className="mb-4">Our Partners</h6>
+      <h5 className="mb-4">Our Partners</h5>
       <Row className="justify-content-center">
         <Col xs={5} md={2}>
           <img src={Fidelity} alt="FidelityBank" className="img-fluid" />

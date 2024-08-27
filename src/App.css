@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Epilogue";
+  src: url("./assets/font/Epilogue-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: bold;
+}
+
 body {
   background-color: #f8f9fa;
 }
@@ -29,9 +36,16 @@ body {
   flex-direction: column;
 }
 
-/* .navbar {
-  background-color: transparent !important;
-} */
+.navbar {
+  background-color: #fff;
+}
+
+/* Make the navbar transparent only on lg and larger screens */
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent !important;
+  }
+}
 
 .custom-nav-link {
   color: #191970 !important;
@@ -54,9 +68,19 @@ body {
   font-weight: 800;
 }
 
+h2 {
+  font-family: "Epilogue";
+}
+
 h4,
-h6 {
+h5 {
   font-family: "Mulish-Regular";
+  color: #191970;
+  font-weight: 800;
+}
+
+h6 {
+  font-family: "Epilogue";
   color: #191970;
   font-weight: 800;
 }

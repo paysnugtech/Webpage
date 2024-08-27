@@ -3,7 +3,7 @@ import HeroSection from "../Components//HeroSection";
 import FinancialSolutionsHeader from "../Components/FinancialSolutionsHeader";
 import ReusableComponent from "../Components/ReusableComponent";
 import CardCarousel from "../Components/CardCarousel";
-import GetStarted from "../Components/GetStarted";
+import GettingStarted from "../Components/GettingStarted";
 import OurPartners from "../Components/OurPartners";
 import ReadyToGetStarted from "../Components/ReadyToGetStarted";
 import Image2 from "../assets/images/image2.svg";
@@ -62,7 +62,7 @@ function LandingPage() {
       <div className="container mt-5 text-center">
         <h4 className="mb-4">Don't just take our word for it</h4>
         <CardCarousel items={items} />
-        <GetStarted />
+        <GettingStarted />
       </div>
       <ReusableComponent
         title="Take Charge of Your Finances"
