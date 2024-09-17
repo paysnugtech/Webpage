@@ -1,13 +1,77 @@
+// import React from "react";
+// import { Carousel, Container, Col } from "react-bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+
+// // Card Component with adjusted styling
+// const Card = ({ text, author }) => (
+//   <div className="card bg-white shadow-sm text-start mb-3 m-3 p-3 rounded-3 border-0">
+//     <div className="card-body">
+//       <p className="card-text">{text}</p>
+//       <h5 className="card-author text-center text-dark">{author}</h5>
+//     </div>
+//   </div>
+// );
+
+// // Carousel Wrapper Component
+// const CardCarousel = ({ items }) => {
+//   return (
+//     <Container>
+//       <Carousel
+//         indicators={false}
+//         controls={true}
+//         className="d-none d-lg-block"
+//         interval={3000} // Prevent auto-sliding
+//       >
+//         {items.map((item, index) => (
+//           <Carousel.Item key={index}>
+//             <div className="d-flex justify-content-around">
+//               <Col lg={5}>
+//                 <Card
+//                   text={items[index % items.length].text}
+//                   author={items[index % items.length].author}
+//                 />
+//               </Col>
+//               <Col lg={5}>
+//                 <Card
+//                   text={items[(index + 1) % items.length].text}
+//                   author={items[(index + 1) % items.length].author}
+//                 />
+//               </Col>
+//               <Col lg={5}>
+//                 <Card
+//                   text={items[(index + 2) % items.length].text}
+//                   author={items[(index + 2) % items.length].author}
+//                 />
+//               </Col>
+//             </div>
+//           </Carousel.Item>
+//         ))}
+//       </Carousel>
+//       <Carousel className="d-lg-none">
+//         {/* Only show carousel on small screens */}
+//         {items.map((item, index) => (
+//           <Carousel.Item key={index}>
+//             <Card text={item.text} author={item.author} />
+//           </Carousel.Item>
+//         ))}
+//       </Carousel>
+//     </Container>
+//   );
+// };
+
+// export default CardCarousel;
+
 import React from "react";
-import { Carousel, Container, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/css/CardCarousel.css"; // Import the custom CSS for the animation
 
 // Card Component with adjusted styling
 const Card = ({ text, author }) => (
   <div className="card bg-white shadow-sm text-start mb-3 m-3 p-3 rounded-3 border-0">
     <div className="card-body">
       <p className="card-text">{text}</p>
-      <h5 className="card-author text-center text-dark">{author}</h5>
+      <h6 className="card-author text-center text-dark">{author}</h6>
     </div>
   </div>
 );
@@ -16,45 +80,15 @@ const Card = ({ text, author }) => (
 const CardCarousel = ({ items }) => {
   return (
     <Container>
-      <Carousel
-        indicators={false}
-        controls={true}
-        className="d-none d-lg-block"
-        interval={null} // Prevent auto-sliding
-      >
-        {items.map((item, index) => (
-          <Carousel.Item key={index}>
-            <div className="d-flex justify-content-around">
-              <Col lg={5}>
-                <Card
-                  text={items[index % items.length].text}
-                  author={items[index % items.length].author}
-                />
-              </Col>
-              <Col lg={5}>
-                <Card
-                  text={items[(index + 1) % items.length].text}
-                  author={items[(index + 1) % items.length].author}
-                />
-              </Col>
-              <Col lg={5}>
-                <Card
-                  text={items[(index + 2) % items.length].text}
-                  author={items[(index + 2) % items.length].author}
-                />
-              </Col>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-      <Carousel className="d-lg-none">
-        {/* Only show carousel on small screens */}
-        {items.map((item, index) => (
-          <Carousel.Item key={index}>
-            <Card text={item.text} author={item.author} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <div className="carousel-wrapper">
+        <div className="carousel-track">
+          {items.map((item, index) => (
+            <Col lg={5} xs={12} key={index}>
+              <Card text={item.text} author={item.author} />
+            </Col>
+          ))}
+        </div>
+      </div>
     </Container>
   );
 };

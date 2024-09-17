@@ -1,0 +1,24 @@
+carousel moving slowly begins here .carousel-wrapper {
+  overflow: hidden; /* Hide anything outside the track */
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: space-between;
+  animation: scroll 20s linear infinite; /* 30 seconds duration for smooth scrolling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card {
+  min-width: 10%; /* Adjust the card size */
+  margin: 0 10px; /* Adjust the spacing between cards */
+}
