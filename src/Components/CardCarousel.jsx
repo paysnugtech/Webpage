@@ -62,7 +62,7 @@
 // export default CardCarousel;
 
 import React from "react";
-import { Container, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/CardCarousel.css"; // Import the custom CSS for the animation
 
@@ -79,17 +79,17 @@ const Card = ({ text, author }) => (
 // Carousel Wrapper Component
 const CardCarousel = ({ items }) => {
   return (
-    <Container>
+    <>
       <div className="carousel-wrapper">
         <div className="carousel-track">
           {items.map((item, index) => (
-            <Col lg={5} xs={12} key={index}>
+            <Col lg={4} xs={12} key={index}>
               <Card text={item.text} author={item.author} />
             </Col>
           ))}
         </div>
       </div>
-    </Container>
+    </>
   );
 };
 

@@ -59,11 +59,11 @@ function LandingPage() {
         imageSrc={Image5}
         reverse={true}
       />
-      <div className="container mt-5 text-center">
+      <div className="mt-5 text-center">
         <h4 className="mb-4">Don't just take our word for it</h4>
-        <CardCarousel items={items} />
-        <GettingStarted />
       </div>
+      <CardCarousel items={items} />
+      <GettingStarted />
       <ReusableComponent
         title="Take Charge of Your Finances"
         description="Experience the ultimate financial freedom with our intuitive app. Effortlessly manage your finances, pay bills, and stay in control wherever you are. 

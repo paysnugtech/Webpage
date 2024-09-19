@@ -1,4 +1,4 @@
-carousel moving slowly begins here .carousel-wrapper {
+.carousel-wrapper {
   overflow: hidden; /* Hide anything outside the track */
   width: 100%;
 }
