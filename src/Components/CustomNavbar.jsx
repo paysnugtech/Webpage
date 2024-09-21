@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo/paysnug-blue.svg";
+import Logo from "../assets/logo/logo.png";
 import Flag from "../assets/icons/nigeria-flag.png";
 import ReusableButton from "./ReusableButton";
 
