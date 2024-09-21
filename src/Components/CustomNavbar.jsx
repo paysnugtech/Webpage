@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo/logo.png";
+import Logo from "../assets/logo/paysnug-blue.svg";
 import Flag from "../assets/icons/nigeria-flag.png";
 import ReusableButton from "./ReusableButton";
 
@@ -10,7 +10,12 @@ const CustomNavbar = () => {
     <Navbar bg="white" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img src={Logo} className="d-inline-block align-top" alt="" />
+          <img
+            src={Logo}
+            className="d-inline-block align-top"
+            alt=""
+            style={{ width: "140px", height: "auto" }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

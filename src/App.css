@@ -61,6 +61,7 @@ body {
   padding: 50px 0;
   font-family: "Mulish-Regular";
   margin-top: 80px;
+  min-height: 100vh;
 }
 
 .hero-section h1 {

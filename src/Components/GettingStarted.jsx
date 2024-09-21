@@ -8,8 +8,8 @@ const GettingStarted = () => {
     <Container className="text-center mt-5 mb-5 bg-light-gray">
       <h3>Getting Started with Paysnug</h3>
       <p>There's so much we offer. Begin your journey in 3 simple steps now.</p>
-      <Row className="justify-content-center mt-4 g-4">
-        <Col md={4} lg={3}>
+      <Row className="justify-content-center mt-4 g-2">
+        <Col md={10} lg={4}>
           <Card className="shadow-sm border-0 rounded-3">
             <Card.Body>
               <div className="mb-3">
@@ -23,7 +23,7 @@ const GettingStarted = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} lg={3}>
+        <Col md={10} lg={4}>
           <Card className="shadow-sm border-0 rounded-3">
             <Card.Body>
               <div className="mb-3">
@@ -37,7 +37,7 @@ const GettingStarted = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} lg={3}>
+        <Col md={10} lg={4}>
           <Card className="shadow-sm border-0 rounded-3">
             <Card.Body>
               <div className="mb-3">
