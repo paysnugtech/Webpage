@@ -37,15 +37,16 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for custom shadow */
 }
 
-/* Make the navbar transparent only on lg and larger screens */
+/* Make the navbar transparent only on lg and larger screens
 @media (min-width: 992px) {
   .navbar {
     background-color: transparent !important;
   }
-}
+} */
 
 .custom-nav-link {
   color: #191970 !important;
