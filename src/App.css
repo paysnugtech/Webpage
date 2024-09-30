@@ -6,10 +6,24 @@
 }
 
 @font-face {
+  font-family: "Mulish-Black";
+  src: url("./assets/font/Mulish-Black.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Epilogue";
   src: url("./assets/font/Epilogue-Regular.ttf") format("truetype");
   font-display: swap;
   font-style: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/font/Inter_18pt-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
 }
 
 body {
@@ -39,6 +53,7 @@ body {
 .navbar {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for custom shadow */
+  height: 70px;
 }
 
 /* Make the navbar transparent only on lg and larger screens
@@ -60,14 +75,15 @@ body {
 
 .hero-section {
   padding: 50px 0;
-  font-family: "Mulish-Regular";
+  font-family: "Mulish-Black";
   margin-top: 80px;
   min-height: 100vh;
+  font-size: 17px;
 }
 
 .hero-section h1 {
   color: #191970;
-  font-family: "Mulish-Regular";
+  font-family: "Mulish-Black";
   font-weight: 800;
 }
 
@@ -77,7 +93,7 @@ h2 {
 
 h4,
 h5 {
-  font-family: "Mulish-Regular";
+  font-family: "Mulish-Black";
   color: #191970;
   font-weight: 800;
 }
@@ -90,6 +106,12 @@ h6 {
 
 p {
   font-family: "Mulish-Regular";
+  color: #000000;
+}
+
+a,
+address {
+  font-family: "Inter";
 }
 
 /* Getstarted Component background */
@@ -102,8 +124,4 @@ p {
 /* Custom CSS to remove border around the Navbar toggle icon */
 .navbar-toggler {
   border: none;
-}
-
-.footer-container {
-  margin: 0 3%;
 }

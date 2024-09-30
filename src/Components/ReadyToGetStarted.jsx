@@ -21,7 +21,7 @@ const ReadyToGetStarted = () => {
         <Row className="d-flex align-items-center justify-content-center">
           <Col lg={6}>
             <h2 className="mb-3">Ready to get started?</h2>
-            <p>
+            <p className="text-white">
               Create an account and instantly start accepting payments, selling
               your beautiful products online and building financial tools.
             </p>

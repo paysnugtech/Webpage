@@ -9,13 +9,13 @@ const HeroSection = () => {
     <div className="hero-section">
       <Container>
         <Row className="align-items-center text-center text-md-start">
-          <Col xs={12} md={6} lg={4} className="mb-5 mb-md-0">
+          <Col xs={12} md={6} lg={5} className="mt-5 mb-5 mb-md-0">
             <h1>Simplify Payments, Amplify Freedom</h1>
-            <p className="mt-4 mb-4">
+            <p className="mt-5 mb-4">
               Connect, transact, and manage your finances effortlessly across
               Africa with hassle-free payments anytime, anywhere.
             </p>
-            <div className="d-flex justify-content-center justify-content-md-start mt-3">
+            <div className="d-flex justify-content-center justify-content-md-start mt-5">
               <a href="#">
                 <img src={AppStore} alt="App store" />
               </a>
@@ -24,7 +24,7 @@ const HeroSection = () => {
               </a>
             </div>
           </Col>
-          <Col xs={12} md={6} lg={5} className="mx-auto">
+          <Col xs={12} md={6} lg={5} className="mx-auto mt-5">
             <img src={HeroImage} alt="Mobile App" className="img-fluid" />
           </Col>
         </Row>

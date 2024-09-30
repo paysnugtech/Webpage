@@ -9,7 +9,7 @@ const ReusableComponent = ({ title, description, imageSrc, reverse }) => {
           reverse ? "flex-row-reverse" : ""
         }`}
       >
-        <Col md={6} lg={4} className="mx-auto">
+        <Col md={6} lg={5} className="mx-auto">
           <h4 className="mb-4">{title}</h4>
           <p>{description}</p>
         </Col>
