@@ -1,0 +1,34 @@
+/* CustomNavbar.css */
+
+.custom-nav-link {
+  color: #191970 !important;
+}
+
+.custom-nav-link.active {
+  font-weight: bold !important;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for custom shadow */
+}
+
+/* Custom CSS to remove border around the Navbar toggle icon */
+.navbar-toggler {
+  border: none;
+}
+
+/* Ensure full height of the container on mobile devices */
+/* @media (max-width: 720px) {
+  .navbar .navbar-collapse {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    padding: 0;
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem;
+    margin: 0;
+  }
+} */

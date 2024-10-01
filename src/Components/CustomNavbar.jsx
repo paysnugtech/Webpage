@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo/logo.png";
 import Flag from "../assets/icons/nigeria-flag.png";
 import ReusableButton from "./ReusableButton";
+import "../assets/css/CustomNavbar.css"; // Import the custom CSS for mobile styling
 
 const CustomNavbar = () => {
   return (
@@ -13,13 +14,13 @@ const CustomNavbar = () => {
           <img
             src={Logo}
             className="d-inline-block align-top"
-            alt=""
+            alt="Paysnug logo"
             style={{ width: "140px", height: "auto" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto d-flex align-items-center">
+          <Nav className="mr-auto d-flex align-items-sm-start p-2">
             <Nav.Link
               as={Link}
               to="/personal"
@@ -31,7 +32,7 @@ const CustomNavbar = () => {
               Business
             </Nav.Link>
           </Nav>
-          <Nav className="ms-auto d-flex align-items-center">
+          <Nav className="ms-auto d-flex align-items-lg-center align-items-sm-start p-2">
             <Nav.Link as={Link} to="/company" className="custom-nav-link">
               Company
             </Nav.Link>

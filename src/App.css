@@ -50,27 +50,6 @@ body {
   flex-direction: column;
 }
 
-.navbar {
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for custom shadow */
-  height: 70px;
-}
-
-/* Make the navbar transparent only on lg and larger screens
-@media (min-width: 992px) {
-  .navbar {
-    background-color: transparent !important;
-  }
-} */
-
-.custom-nav-link {
-  color: #191970 !important;
-}
-
-.custom-nav-link.active {
-  font-weight: bold !important;
-}
-
 /* Hero section begins Here */
 
 .hero-section {
@@ -119,9 +98,4 @@ address {
   background-color: #f2f3fb;
   padding: 30px;
   border-radius: 10px;
-}
-
-/* Custom CSS to remove border around the Navbar toggle icon */
-.navbar-toggler {
-  border: none;
 }
